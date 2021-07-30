@@ -1,0 +1,35 @@
+GET http://localhost:8100/api/pet
+
+###
+GET http://localhost:8100/api/pet/6102cc843f015423506e9559
+
+###
+POST http://localhost:8100/api/pet/new
+Content-Type: application/json
+
+{
+    "petName":"George",
+    "petType":"Perro",
+    "petDescription":"Mediano",
+    "skillOne":"Schanuzer",
+    "skillTwo":"Schanuzer",
+    "skillThree":"Schanuzer",
+    "likes":"0"
+}
+
+###
+PUT http://localhost:8100/api/pet/update/6102cc843f015423506e9559
+Content-Type: application/json
+
+{
+    "petName":"Georges",
+    "petType":"Perro",
+    "petDescription":"Gigante",
+    "skillOne":"Schanuzer",
+    "skillTwo":"Schanuzer",
+    "skillThree":"Schanuzer",
+    "likes":"0"
+}
+
+###
+DELETE http://localhost:8100/api/pet/delete/6102cc643f015423506e9554
